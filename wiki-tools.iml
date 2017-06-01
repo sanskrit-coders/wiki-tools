@@ -28,6 +28,7 @@
     <orderEntry type="library" name="Maven: org.scala-lang:scalap:2.11.0" level="project" />
     <orderEntry type="library" name="Maven: org.scala-lang:scala-compiler:2.11.0" level="project" />
     <orderEntry type="library" name="Maven: org.scala-lang.modules:scala-parser-combinators_2.11:1.0.1" level="project" />
+    <orderEntry type="module" module-name="StarDict" />
     <orderEntry type="library" name="Maven: com.ibm:couchdb-scala_2.11:0.7.2" level="project" />
     <orderEntry type="library" name="Maven: org.scalaz:scalaz-core_2.11:7.2.1" level="project" />
     <orderEntry type="library" name="Maven: org.scalaz:scalaz-effect_2.11:7.2.1" level="project" />
