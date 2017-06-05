@@ -53,6 +53,7 @@ object wikisource extends wikiBot {
       val pageText = getIndexedPage(fileTitle = fileTitle, pageNum = pageNum, numberLanguage = numberLanguage)
       destination.print(pageText)
     })
+    destination.close()
   }
 
   def indexPageTests = {
@@ -119,7 +120,8 @@ object wikisource extends wikiBot {
     // fillIndexedPagesSanskritocr
     // fillIndexedPagesGocr
 
-    // outfileStr = "/home/vvasuki/stardict-sanskrit/sa-sanskritnlp.vyAkaraNa.vyAkaraNa/abhyankara-grammar/abhyankara-grammar.txt"
-    getIndexedPages("ADictionaryOfSanskritGrammarByMahamahopadhyayaKashinathVasudevAbhyankar.djvu", 221, 230, numberLanguage = "sa")
+    getIndexedPages("ADictionaryOfSanskritGrammarByMahamahopadhyayaKashinathVasudevAbhyankar.djvu", startPage = 17, endPage = 432,
+      numberLanguage = "sa",
+      outfileStr = "/home/vvasuki/stardict-sanskrit/sa-vyAkaraNa/abhyankara-grammar/abhyankara-grammar.txt")
   }
 }
